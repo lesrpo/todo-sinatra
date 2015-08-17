@@ -1,0 +1,20 @@
+<% if @created != nil %>
+	<div class="alert alert-success alert-dismissible" role="alert">
+		<h5><%= @created %></h5>
+	</div>
+<%end%>
+<div class="tr mb">
+	<a class="btn btn-info" href="/" role="button">Volver</a>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h2>Crear nueva tarea</h2>
+	</div>
+	<div class="panel-body">
+		<form action="/create" method="POST">
+			<label for="name">Nombre</label>
+			<input type="text" name="name"/>
+			<input type="submit" value="Agregar" class="btn btn-info"/>
+		</form>
+	</div>
+</div>

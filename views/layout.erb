@@ -1,0 +1,36 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<title>Todo App</title>
+	<style>
+		.page-header{
+			background-color: #19D1FF;
+		}
+		.buttons-container{
+			height: 50px;
+		}
+		.tr{
+			text-align: right;
+		}
+		.mb{
+			margin-bottom: 1em;
+		}
+		.btn-group-lg>.btn, .btn-lg {
+			padding: 8px 11px !important;
+			font-size: 17px !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="page-header">
+		<h1>TO-DO APP  <small>Maneja tus tareas</small><h1>
+	</div>
+	<div style="width:60%;margin:0 auto;">
+		<%=yield %>
+	</div>
+</body>
+</html>
